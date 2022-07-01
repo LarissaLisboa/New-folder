@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #67198C;
+    height: 7vh;
+    z-index: 2;
+}
+
+.saldos {
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #67198C;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.receitas {
+    color: #4AB01A;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'roboto';
+}
+
+.saldo {
+    color: white;
+    align-self: flex-start;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'roboto';
+    z-index: 2;
+}
+
+.despesas {
+    color: #E41818;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'roboto';
+}
+
+select {
+    margin-top: 1rem;
+    border: none;
+    background-color: #67198C;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.notificacao {
+
+    margin-right: 1rem;
+    border: none;
+    background-color: #67198C;
+    width: 10vw;
+}
+
+.botoeshome {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 12vh;
+    align-items: center;
+    color: white;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.bhome{
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    border: none;
+    background-color: #67198C;
+    color: white;
+    margin-bottom: 1.4rem;
+}
+.graficos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.2rem;
+}
+.legenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.obj{
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 2rem;
+}
+.objetivo{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'roboto';
+    margin-bottom: 0.5rem;
+}
+ul{
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+h2{
+    font-family: 'roboto';
+    margin-left: 1rem;
+    color: #67198C;
+    padding-top: 0.5rem;
+}
+#btn-mobile {
+    display: flex;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    top: 4rem;
+    right: 0px;
+    background: #67198C;
+    z-index: 1000;
+}
+
+#nav.active #menu {
+    display: block;
+    height: 100vh;
+    visibility: visible;
+    z-index: 1000;
+}
+
+#menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+#hamburger {
+    color: white;
+    border-top: 3px solid;
+    width: 20px;
+
+}
+
+#hamburger::after,
+#hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+#nav.active #hamburger {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+
+}
+a.itemenu:hover {color:#0d6efd;
+}
+.itemenu{
+    color: white;
+    font-family: 'roboto';
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}  
