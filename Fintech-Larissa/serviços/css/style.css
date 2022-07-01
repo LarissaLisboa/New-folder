@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: #67198C;
+    display: flex;
+    font-family: 'roboto';
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.titulo{
+    text-align: center;
+    font-size: 18px;
+    padding-right: 3rem;
+}
+.tabela{
+    display: flex;
+    font-family: 'roboto';
+    font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    background-color: #c4c4c4;
+}
+.item{
+    
+    font-family: 'roboto';
+    font-size: 14px;
+    font-weight: 100;
+}
+.mensalidade{
+    
+    font-family: 'roboto';
+    font-size: 14px;
+    font-weight: 100;
+    margin-left: -3rem;
+}
+.info{
+    margin-right: 2.4rem;
+}
+ul{
+    list-style: none;
+   
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 0.7rem;
+    height: 77vh;
+}
+.add{
+    position: relative;
+    border: none;
+    width: 100vw;
+    background-color: #67198C;
+    font-family: 'roboto';
+    font-size: 16px;
+    color: white;
+    height: 10vh;
+    
+}  
+    
+#btn-mobile {
+    display: flex;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    top: 3rem;
+    right: 0px;
+    background: #67198C;
+    z-index: 1000;
+}
+
+#nav.active #menu {
+    display: block;
+    height: 100vh;
+    visibility: visible;
+    z-index: 1000;
+}
+
+#menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+#hamburger {
+    color: white;
+    border-top: 3px solid;
+    width: 20px;
+
+}
+
+#hamburger::after,
+#hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+#nav.active #hamburger {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+
+}
+a.itemenu:hover {color:#0d6efd;
+}
+.itemenu{
+    color: white;
+    font-family: 'roboto';
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}  

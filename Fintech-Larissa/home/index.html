@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>home</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav">
+            <button id="btn-mobile">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu">
+                <li><a class="itemenu" href="#">Home</a></li><br>
+                <li><a class="itemenu" href="#">Receitas</a></li><br>
+                <li><a class="itemenu" href="#">Despesas</a></li><br>
+                <li><a class="itemenu" href="#">Objetivos</a></li><br>
+                <li><a class="itemenu" href="#">Serviços</a></li><br>
+            </ul>
+        </nav>
+        <select name="mes" id="">
+            <option>Janeiro</option>
+            <option>Fevereiro</option>
+            <option>Março</option>
+            <option>Abril</option>
+            <option>Maio</option>
+            <option>Junho</option>
+            <option>Julho</option>
+            <option>Agosto</option>
+            <option>Setembro</option>
+            <option>Outubro</option>
+            <option>Novembro</option>
+            <option>Dezembro</option>
+        </select>
+        <button class="notificacao"><img src="img/Vector.png" alt=""></button>
+    </header>
+    <main>
+        <section class="saldos">
+            <div class="receitas"><span>Receitas</span><br><span>R$ 0,00</span></div>
+            <div class="saldo"><span>Saldo em contas</span><br><span>R$ 0,00</span></div>
+            <div class="despesas"><span>Despesas</span><br><span>R$ 0,00</span></div>
+        </section>
+        <section class="botoeshome"><button class="bhome"><img src="./img/receita.png" alt="" height="52" width="52"><br><span>Adicionar receita</span></button><button class="bhome"><img src="./img/despesa.png" alt="" height="46" width="42"><br><span>Adicionar despesa</span></button><button class="bhome"><img src="./img/pix.png" alt="" height="49" width="49"><br><br><span>Pix</span></button><button class="bhome"><a href="/objetivo/index.html"><img src="./img/objetivo.png" alt="" height="46" width="42"></a><br><span>Adicionar objetivo</span></button>
+        </section>
+        <section class="graficos"><img src="img/bxs_doughnut-chart.png" alt="Imagem" >
+            <div class="legenda"><span class="receitas">Receitas R$ 0,00</span><span class="despesas">Despesas
+                    R$0,00</span></div>
+        </section>
+        <section class="obj">
+            <h2>Objetivos</h2><br>
+            <section class="objetivo">
+            <ul>
+                <li>Notebook</li><br>
+                <li>Moto</li>
+            </ul>
+            <ul>
+                <li>R$ 1.050,00/R$ 5.600,00</li><br>
+                <li>R$ 25,00/R$ 9.000,00</li>
+            </ul>
+        </section></section>
+    </main>
+    <script src="js/btnmobile.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
