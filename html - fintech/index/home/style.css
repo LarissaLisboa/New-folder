@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #003049;
+}
+
+#id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background-color: #003049;
+    border-radius: 0 0 2em 2em;
+    padding: 1em;
+    box-shadow: 1em 0 2em #165075;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+#menu>h1{
+    color: #FCBF49;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+header>h2{
+    margin-top: 1em;
+    color: #FFFCF9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header>p{
+    margin-top: 1em;
+    color: #FFFCF9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section{
+    background-color: #003049;
+    border-radius: 2em 2em 2em 2em;
+    padding: 1em;
+    box-shadow: 1em 0 2em #165075;
+}
+
+.caixa-sombra{
+    margin-top: 2em;
+}
+
+.bolinha{
+    height: 5em;
+    
+    margin: 10px;
+    border-radius:50%;
+    background-color: #FCBF49;
+    text-align: center;
+    margin-left: 1em;
+    min-width: fit-content; 
+}
+
+#bolinha-mae{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.bolinha>p{
+    margin-top: 2.2em;
+    color: #003049;
+    font-weight: bolder;
+    font-size: 14px;
+    width: 5em;
+    
+}
+
+.linhas-objetivo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 1em;
+}
+
+.valor{
+    margin-left: 5em;
+    color: #669BBC;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.titulo-objetivo{
+    color: #669BBC;
+    font-size: 22px;
+    font-weight: bolder;
+    
+}
+
+#valor-moto{
+    padding-left: 2em;
+}
+
+section>h2{
+    color: #FCBF49;
+    font-weight: bolder;
+}
+
+#grafico-receita{
+    display: flex;
+    flex-direction: row;
+}
+
+#receitas-despesas{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    padding-left: 2em;
+    font-weight: bold;
+}
+
+#grafico{
+    width: 8em;
+    justify-content: left;
+    padding-left: 0;
+}
+
+#receita{
+    color: #168C3C;
+    padding-top: 1em;
+}
+#despesa{
+    color: #C1121F;
+    margin-top: 0.5em;
+}
